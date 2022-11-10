@@ -287,14 +287,14 @@ class Worker(QtCore.QObject):
                         # Allow user abort
                         if self.abort is True:
                             break
-                        self.joinlind.insertFeature(feat)
+                        self.joinlind.addFeature(feat)
                         self.calculate_progress()
                 else:
                     for feat in self.joinvl.getFeatures():
                         # Allow user abort
                         if self.abort is True:
                             break
-                        self.joinlind.insertFeature(feat)
+                        self.joinlind.addFeature(feat)
                         self.calculate_progress()
                 self.status.emit('Join layer index created!')
                 self.processed = 0
