@@ -221,7 +221,7 @@ class NNJoinDialog(QDialog, FORM_CLASS):
                 self.showError(self.tr('Aborted') + '!')
             else:
                 self.showError(self.tr('No layer created') + '!')
-        self.progressBar.setValue(0.0)
+        self.progressBar.setValue(0)
         self.button_box.button(QDialogButtonBox.Ok).setEnabled(True)
         self.button_box.button(QDialogButtonBox.Close).setEnabled(True)
         self.button_box.button(QDialogButtonBox.Cancel).setEnabled(False)

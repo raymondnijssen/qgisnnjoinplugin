@@ -134,7 +134,7 @@ class NNJoin(object):
         # Create the dialog (after translation) and keep reference
         self.dlg = NNJoinDialog(self.iface)
         # Intitalise the components
-        self.dlg.progressBar.setValue(0.0)
+        self.dlg.progressBar.setValue(0)
         self.dlg.outputDataset.setText('Result')
         # Populate the input and join layer combo boxes
 #        layers = QgsMapLayerRegistry.instance().mapLayers()
